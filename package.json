@@ -1,0 +1,35 @@
+{
+  "name": "@yomguithereal/helpers",
+  "version": "1.0.0",
+  "description": "Miscellaneous helper functions.",
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "prepublish": "npm run lint && npm test",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yomguithereal/helpers.git"
+  },
+  "author": {
+    "name": "Guillaume Plique",
+    "url": "http://github.com/Yomguithereal"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yomguithereal/helpers/issues"
+  },
+  "homepage": "https://github.com/Yomguithereal/helpers#readme",
+  "devDependencies": {
+    "@yomguithereal/eslint-config": "^4.0.0",
+    "eslint": "^4.18.2",
+    "mocha": "^5.0.4"
+  },
+  "eslintConfig": {
+    "extends": "@yomguithereal/eslint-config"
+  }
+}
