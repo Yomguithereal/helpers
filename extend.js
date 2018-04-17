@@ -1,6 +1,6 @@
 /**
  * Extend function
- *=================
+ * ================
  *
  * Function used to push a bunch of values into an array at once.
  *
