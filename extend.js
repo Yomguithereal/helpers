@@ -27,13 +27,14 @@
  * @param  {array} values - Values to add.
  */
 module.exports = function extend(array, values) {
-  var l1 = array.length,
-      l2 = values.length;
+  var l2 = values.length;
 
   if (l2 === 0)
     return;
 
-  array.length += values.length;
+  var l1 = array.length;
+
+  array.length += l2;
 
   for (var i = 0; i < l2; i++)
     array[l1 + i] = values[i];
